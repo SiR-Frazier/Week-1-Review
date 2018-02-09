@@ -9,6 +9,6 @@ describe("#anagram") do
   end
   it("returns message 'These words are anagrams' if the two input words contain the same letters regardless of order or case ") do
     words = Words.new(@word1, @word2)
-    expect(words.downcase_check("Cat","aCt")).to(eq("These words are anagrams"))
+    expect(words.lowercase_check("Cat","aCt")).to(eq("These words are anagrams"))
   end
 end

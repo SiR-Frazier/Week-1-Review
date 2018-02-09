@@ -12,10 +12,6 @@ class Words
   #   @word2
   # end
 
-  def are_equal(word)
-    @word1.casecmp(@word2) == 0
-  end
-
   def anagram_check(word1, word2)
     word1_array = word1.split("")
     word2_array = word2.split("")
@@ -26,8 +22,17 @@ class Words
     else
      "These words are not anagrams"
     end
-  end  
-  # def downcase_check(word1, word2_sort)
-  #   word1 =
-  # end
+  end
+
+  def lowercase_check(word1, word2)
+    new_word1 = word1.downcase.split("")
+    new_word2 = word2.downcase.split("")
+    new_word1_sort = new_word1.sort
+    new_word2_sort = new_word2.sort
+    if (new_word1_sort == new_word2_sort)
+      "These words are anagrams"
+    else
+      "These words are not anagrams"
+    end
+  end
 end
