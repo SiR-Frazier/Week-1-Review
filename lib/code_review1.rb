@@ -35,4 +35,7 @@ class Words
       "These words are not anagrams"
     end
   end
+
+  def vowel_check(word1, word2)
+  end
 end
