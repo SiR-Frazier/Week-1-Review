@@ -37,5 +37,8 @@ class Words
   end
 
   def vowel_check(word1, word2)
+    if !word1.scan(/[aeiou]/) || word2.scan(/[aeiou]/)
+      "Please enter actual words"
+    end
   end
 end
