@@ -18,4 +18,9 @@ describe("#anagram") do
     expect(words.vowel_check("yrrb","rbyr")).to(eq("You need to submit actual words"))
   end
 
+  it("returns 'These words have no letter matches and are antigrams' if the input words have zero matching letters") do
+    words = Words.new(@word, @word2)
+    expect(words.antigram_check("round", "quick")).to(eq("These words have no letter matches and are antigrams"))
+  end
+
 end

@@ -41,4 +41,12 @@ class Words
       "You need to submit actual words"
     end
   end
+
+  def antigram_check(word1, word2)
+    split1 = word1.split("")
+    split2 = word2.split("")
+    if split1.sort != split2.sort
+      "These words have no letter matches and are antigrams"
+    end
+  end  
 end
