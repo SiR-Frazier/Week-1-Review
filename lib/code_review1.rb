@@ -17,8 +17,8 @@ class Words
   end
 
   def vowel_check(word1, word2)
-    if (word1.downcase.count 'aeiou') == 0 || (word2.downcase.count 'aeiou') == 0
-    # if @word1.scan(/[aeiou]/) || @word2.scan(/[aeiou]/).length == 0
+    if (@word1.downcase.count 'aeiou') == 0 || (@word2.downcase.count 'aeiou') == 0
+    # if ((@word1.scan(/[aeiou]/).length == 0) || (@word2.scan(/[aeiou]/).length == 0))
       "You need to submit actual words"
     end
   end
