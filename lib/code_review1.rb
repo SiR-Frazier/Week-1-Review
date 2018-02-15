@@ -17,23 +17,18 @@ class Words
   end
 
   def vowel_check(word1, word2)
-    if @word1.scan(/[aeiou]/) || @word2.scan(/[aeiou]/) == 0
+    if (word1.downcase.count 'aeiou') == 0 || (word2.downcase.count 'aeiou') == 0
+    # if @word1.scan(/[aeiou]/) || @word2.scan(/[aeiou]/).length == 0
       "You need to submit actual words"
     end
   end
 
-  # def vowel_check(word1, word2)
-  #   if !@word1.scan(/[aeiou]/) || !@word2.scan(/[aeiou]/)
-  #     "You need to submit actual words"
-  #   end
-  # end
-
   def antigram_check(word1, word2)
     split1 = @word1.split("")
     split2 = @word2.split("")
+    # if split1.scan(/[split2]/)
     if (split1.sort & split2.sort) == []
       "These words have no letter matches and are antigrams"
     end
   end
-
 end
