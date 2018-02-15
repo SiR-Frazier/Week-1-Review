@@ -1,12 +1,12 @@
 # _{Anagrams and Antigrams}_
 
-#### _This program allows users to put in two words and to see if the words are anagrams, {February 9, 2018}_
+#### _This program allows users to put in two words and to see if the words are anagrams, February 14, 2018_
 
-#### By _**{Bryce Frazier}**_
+#### By _**Bryce Frazier**_
 
 ## Description
 
-_{This is a partially functional Ruby program that can determine whether or not two input words are anagrams}_
+_This Ruby program that can determine whether or not two input words are anagrams_
 
 ## Setup/Installation Requirements
 
@@ -15,15 +15,15 @@ _{This is a partially functional Ruby program that can determine whether or not 
 
 ## Known Bugs
 
-_{Currently, it only allows you to compare two words regardless of casing. It doesn't have the capability to determine if the word provided is missing vowels, or determine if input words are antigrams rather than anagrams}_
+_Program allows you to compare two words or phrases to see if they are anagrams. It also tests two words to see if any vowels are present, as well as test to see if the inputs share any common letters._
 
 ## Support and contact details
 
-_{To suggest changes, submit a pull request in the GitHub repository}_
+_To suggest changes, submit a pull request in the GitHub repository_
 
 ## Technologies Used
 
-_{Ruby}_
+_Ruby_
 
 ### License
 
